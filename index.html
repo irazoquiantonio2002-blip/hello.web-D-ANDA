@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D'ANDA Bikes | Tienda y Taller de Bicicletas</title>
+  <meta name="description" content="D'ANDA Bikes es tienda y taller de bicicletas: mantenimiento, refacciones, accesorios, suspensiones, llantas, lubricantes y asesoría para ciclistas. Servicio especializado y atención directa.">
+  <meta name="keywords" content="D'ANDA Bikes, taller de bicicletas, tienda de bicicletas, refacciones para bicicleta, accesorios de ciclismo, mantenimiento de bicicletas, llantas Maxxis, RockShox, Fox, Muc-Off">
+  <meta property="og:title" content="D'ANDA Bikes | Tienda y Taller de Bicicletas">
+  <meta property="og:description" content="Venta, mantenimiento y asesoría especializada para ciclistas que buscan rodar mejor, más seguro y con equipo confiable.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="imagenes/bicicleta-premium-danda.jpeg">
+  <link rel="icon" type="image/png" href="imagenes/logo-danda.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="loader" aria-hidden="true">
+  <div class="ld-logo">
+    <img src="imagenes/logo-danda.png" alt="" class="ld-logo-img">
+    <div class="ld-ring"></div>
+  </div>
+  <div class="ld-brand">
+    <p class="ld-name">D'ANDA <em>BIKES</em></p>
+    <p class="ld-tag">Tienda y taller de bicicletas</p>
+  </div>
+  <div class="ld-progress">
+    <div class="ld-track"><div class="ld-fill"></div></div>
+    <p class="ld-note">Afinando la rodada</p>
+  </div>
+</div>
+
+<nav id="nav" role="navigation" aria-label="Menú principal">
+  <div class="nav-wrap">
+    <a href="#" class="logo" aria-label="D'ANDA Bikes">
+      <img src="imagenes/logo-danda.png" alt="Logotipo de D'ANDA Bikes" class="logo-img">
+      <div class="logo-word">D'ANDA <em>BIKES</em></div>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#about">Nosotros</a></li>
+      <li><a href="#services">Servicios</a></li>
+      <li><a href="#inventario">Tienda</a></li>
+      <li><a href="#why">Ventajas</a></li>
+      <li><a href="#contact" class="nav-cta">Agenda Servicio</a></li>
+    </ul>
+    <button class="hamburger" id="ham" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="mob" class="mob-menu" role="navigation" aria-label="Menú móvil">
+  <a href="#about">Nosotros</a>
+  <a href="#services">Servicios</a>
+  <a href="#inventario">Tienda</a>
+  <a href="#why">Ventajas</a>
+  <a href="#contact">Agenda Servicio</a>
+</div>
+
+<main>
+<section id="hero" aria-label="Encabezado principal">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-ov" aria-hidden="true"></div>
+  <canvas id="pcanvas" class="particle-canvas" aria-hidden="true"></canvas>
+
+  <div class="hero-body">
+    <div class="wrap">
+      <p class="hero-eyebrow">D'ANDA Bikes · Tienda y taller especializado</p>
+      <h1 class="hero-h1">
+        <span class="h1-line"><span class="h1-inner">Tu bici lista</span></span>
+        <span class="h1-line"><span class="h1-inner">para rodar más fuerte</span></span>
+        <span class="h1-line h1-accent"><span class="h1-inner">con servicio experto</span></span>
+      </h1>
+      <p class="hero-typewriter" aria-label="Especialidades de D'ANDA Bikes">
+        <span class="tw-label">Especialistas en:</span>
+        <span class="tw-text" id="twText"></span><span class="tw-cursor" aria-hidden="true">|</span>
+      </p>
+      <p class="hero-p">Venta, mantenimiento y asesoría para ciclistas que cuidan cada detalle: desde refacciones y accesorios hasta suspensión, llantas, lubricación y ajustes de taller.</p>
+      <div class="hero-btns">
+        <a href="https://wa.me/526673111524?text=Hola%2C%20quiero%20agendar%20servicio%20o%20cotizar%20productos%20en%20D%27ANDA%20Bikes" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          Agendar por WhatsApp
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#services" class="btn-secondary">Ver Servicios</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-stats" aria-label="Cifras clave">
+    <div class="wrap">
+      <div class="stats-row">
+        <div class="stat-col"><span class="stat-val">Taller</span><span class="stat-lbl">Servicio especializado</span></div>
+        <div class="stat-col"><span class="stat-val" data-hero-count="8" data-prefix="+" data-suffix="">+0</span><span class="stat-lbl">Marcas visibles en tienda</span></div>
+        <div class="stat-col"><span class="stat-val">MTB</span><span class="stat-lbl">Componentes y accesorios</span></div>
+        <div class="stat-col"><span class="stat-val">Directo</span><span class="stat-lbl">Asesoría en tienda</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-deco" aria-hidden="true">
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+    <div class="hero-beam"></div>
+  </div>
+  <div class="hero-badge" aria-hidden="true"><span class="hb-dot"></span><span class="hb-text">Bike Mechanical</span></div>
+</section>
+
+<section id="trust" aria-label="Marcas y categorías disponibles">
+  <div class="trust-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="trust-row rev">
+      <p class="trust-label">En tienda encontrarás</p>
+      <div class="trust-chips">
+        <span class="trust-chip">RockShox</span><span class="trust-chip">Fox</span><span class="trust-chip">Maxxis</span><span class="trust-chip">Muc-Off</span><span class="trust-chip">Shimano</span><span class="trust-chip">SRAM</span><span class="trust-chip">Crankbrothers</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section bg-white">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-img-wrap rev from-l">
+        <div class="about-img-main"><img src="imagenes/equipo-tienda-danda.jpeg" alt="Equipo de D'ANDA Bikes frente a la tienda y taller de bicicletas" loading="lazy"></div>
+        <div class="about-accent"><p class="a-num">Pro</p><p class="a-lbl">Servicio de taller</p></div>
+      </div>
+      <div class="about-text rev">
+        <p class="eyebrow">Quiénes somos</p>
+        <h2 class="heading heading--shine">Una tienda hecha para ciclistas exigentes</h2>
+        <p>D'ANDA Bikes es una tienda y taller especializado en bicicletas. Su enfoque está en brindar servicio de alta calidad, asesoría personalizada y soluciones reales para ciclistas amateurs y profesionales.</p>
+        <p>El espacio integra venta de refacciones, accesorios y productos de mantenimiento con atención experta para que cada cliente encuentre exactamente lo que necesita para rodar con seguridad, rendimiento y confianza.</p>
+        <div class="about-stats">
+          <div class="a-stat"><p class="a-stat-n">Venta</p><p class="a-stat-l">Refacciones y accesorios</p></div>
+          <div class="a-stat"><p class="a-stat-n">Taller</p><p class="a-stat-l">Mantenimiento especializado</p></div>
+          <div class="a-stat"><p class="a-stat-n">MTB</p><p class="a-stat-l">Componentes de alto desempeño</p></div>
+          <div class="a-stat"><p class="a-stat-n">Guía</p><p class="a-stat-l">Asesoría personalizada</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section bg-off">
+  <div class="wrap">
+    <div class="section-head section-head--center rev">
+      <p class="eyebrow">Lo que hacemos</p>
+      <h2 class="heading heading--shine">Servicio, refacciones y equipo para rodar mejor</h2>
+      <p class="sub">Una experiencia integral para cuidar tu bicicleta, mejorar su desempeño y elegir componentes con criterio técnico.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card rev d1"><span class="svc-num" aria-hidden="true">01</span><div class="svc-icon ic-gold"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="17" r="4"/><circle cx="18" cy="17" r="4"/><path d="M10 17h4l-3-7h3l2 7M6 17l4-7"/></svg></div><h3>Mantenimiento de bicicletas</h3><p>Ajustes, revisión general y servicio de taller para mantener tu bicicleta precisa, limpia y lista para salir a rodar.</p><p class="svc-models">Ideal para ruta, montaña y uso diario</p><div class="svc-tags"><span class="tag tag-gold">Ajustes</span><span class="tag tag-gold">Diagnóstico</span><span class="tag tag-gold">Servicio</span></div></div>
+      <div class="svc-card rev d2"><span class="svc-num" aria-hidden="true">02</span><div class="svc-icon ic-gold"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v18M18 3v18M8 7h8M8 17h8"/><path d="M12 7v10"/></svg></div><h3>Suspensión y componentes</h3><p>Refacciones y piezas de desempeño para mejorar control, respuesta y seguridad en cada rodada.</p><p class="svc-models">RockShox · Fox · Crankbrothers</p><div class="svc-tags"><span class="tag tag-gold">Suspensión</span><span class="tag tag-gold">Pedales</span><span class="tag tag-gold">Transmisión</span></div></div>
+      <div class="svc-card rev d3"><span class="svc-num" aria-hidden="true">03</span><div class="svc-icon ic-gold"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 4v3M12 17v3M4 12h3M17 12h3"/></svg></div><h3>Llantas y consumibles</h3><p>Llantas, selladores, lubricantes, limpiadores y productos de cuidado para conservar tu bici en condiciones óptimas.</p><p class="svc-models">Maxxis · Muc-Off · Rockbros</p><div class="svc-tags"><span class="tag tag-gold">Llantas</span><span class="tag tag-gold">Lubricación</span><span class="tag tag-gold">Limpieza</span></div></div>
+      <div class="svc-card rev d4"><span class="svc-num" aria-hidden="true">04</span><div class="svc-icon ic-gold"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 13a8 8 0 0 1 16 0v4a2 2 0 0 1-2 2h-2v-6h4"/><path d="M4 13h4v6H6a2 2 0 0 1-2-2v-4z"/><path d="M8 13h8"/></svg></div><h3>Accesorios para ciclistas</h3><p>Cascos, guantes, herramientas, porta ánforas y complementos para entrenar, competir o moverte con más comodidad.</p><p class="svc-models">Equipamiento útil, durable y probado</p><div class="svc-tags"><span class="tag tag-gold">Cascos</span><span class="tag tag-gold">Guantes</span><span class="tag tag-gold">Herramientas</span></div></div>
+      <div class="svc-card rev d5"><span class="svc-num" aria-hidden="true">05</span><div class="svc-icon ic-gold"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 22h4"/><path d="M8 14a6 6 0 1 1 8 0c-.9.7-1.4 1.5-1.5 2.5h-5C9.4 15.5 8.9 14.7 8 14z"/></svg></div><h3>Asesoría personalizada</h3><p>Te ayudamos a elegir la pieza correcta según tu bici, tipo de rodada, presupuesto y objetivo.</p><p class="svc-models">Compra con claridad, no por impulso</p><div class="svc-tags"><span class="tag tag-gold">Recomendación</span><span class="tag tag-gold">Compatibilidad</span><span class="tag tag-gold">Rendimiento</span></div></div>
+      <div class="svc-card rev d6"><span class="svc-num" aria-hidden="true">06</span><div class="svc-icon ic-gold"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18"/><path d="M7 8l-4 4 4 4"/><path d="M17 8l4 4-4 4"/><path d="M12 4v16"/></svg></div><h3>Venta de bicicletas</h3><p>Bicicletas y opciones de equipamiento para quienes buscan una máquina confiable desde el primer día.</p><p class="svc-models">Selección y orientación en tienda</p><div class="svc-tags"><span class="tag tag-gold">MTB</span><span class="tag tag-gold">Componentes</span><span class="tag tag-gold">Entrega</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="inventario" class="section bg-white">
+  <div class="wrap">
+    <div class="prod-header rev"><div><p class="eyebrow">Tienda D'ANDA</p><h2 class="heading heading--shine">Productos que sí hacen diferencia</h2></div><a href="#contact" class="btn-outline">Solicitar Cotización</a></div>
+    <div class="prod-grid">
+      <div class="prod-card rev d1"><div class="prod-photo"><img src="imagenes/productos-muc-off-danda.jpeg" alt="Productos Muc-Off para limpieza y mantenimiento de bicicletas en D'ANDA Bikes" loading="lazy"></div><h3>Limpieza y lubricación</h3><p>Productos para mantener transmisión, cuadro y componentes con una limpieza profesional.</p><a class="prod-pill" href="https://wa.me/526673111524?text=Hola%2C%20quiero%20cotizar%20productos%20de%20limpieza%20y%20lubricaci%C3%B3n%20en%20D%27ANDA%20Bikes" target="_blank" rel="noopener noreferrer">Cotizar ahora</a></div>
+      <div class="prod-card rev d2"><div class="prod-photo"><img src="imagenes/llanta-maxxis-danda.jpeg" alt="Llanta Maxxis para bicicleta de montaña disponible en D'ANDA Bikes" loading="lazy"></div><h3>Llantas MTB</h3><p>Opciones para agarre, control y confianza en terreno técnico o rodadas de alto ritmo.</p><a class="prod-pill" href="https://wa.me/526673111524?text=Hola%2C%20quiero%20cotizar%20llantas%20para%20bicicleta%20en%20D%27ANDA%20Bikes" target="_blank" rel="noopener noreferrer">Cotizar ahora</a></div>
+      <div class="prod-card rev d3"><div class="prod-photo"><img src="imagenes/suspension-rockshox-danda.jpeg" alt="Suspensión RockShox para bicicleta en D'ANDA Bikes" loading="lazy"></div><h3>Suspensión y servicio</h3><p>Componentes y revisión especializada para que tu bicicleta responda con precisión.</p><a class="prod-pill" href="https://wa.me/526673111524?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20suspensi%C3%B3n%20y%20servicio%20en%20D%27ANDA%20Bikes" target="_blank" rel="noopener noreferrer">Cotizar ahora</a></div>
+      <div class="prod-card rev d4"><div class="prod-photo"><img src="imagenes/casco-ciclismo-danda.jpeg" alt="Casco de ciclismo disponible en D'ANDA Bikes" loading="lazy"></div><h3>Cascos y protección</h3><p>Equipo de protección para rodar con seguridad sin sacrificar comodidad ni estilo.</p><a class="prod-pill" href="https://wa.me/526673111524?text=Hola%2C%20quiero%20cotizar%20cascos%20y%20equipo%20de%20protecci%C3%B3n%20en%20D%27ANDA%20Bikes" target="_blank" rel="noopener noreferrer">Cotizar ahora</a></div>
+      <div class="prod-card rev d5"><div class="prod-photo"><img src="imagenes/componentes-bicicleta-danda.jpeg" alt="Componentes y accesorios para bicicleta disponibles en D'ANDA Bikes" loading="lazy"></div><h3>Componentes</h3><p>Piezas y upgrades para mejorar eficiencia, control y sensación de manejo.</p><a class="prod-pill" href="https://wa.me/526673111524?text=Hola%2C%20quiero%20cotizar%20componentes%20para%20bicicleta%20en%20D%27ANDA%20Bikes" target="_blank" rel="noopener noreferrer">Cotizar ahora</a></div>
+      <div class="prod-card rev d6"><div class="prod-photo"><img src="imagenes/bicicleta-premium-danda.jpeg" alt="Bicicleta de montaña premium disponible en D'ANDA Bikes" loading="lazy"></div><h3>Bicicletas</h3><p>Opciones para ciclistas que buscan una bici confiable, bien asesorada y lista para rodar.</p><a class="prod-pill" href="https://wa.me/526673111524?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20bicicletas%20en%20D%27ANDA%20Bikes" target="_blank" rel="noopener noreferrer">Cotizar ahora</a></div>
+      <div class="prod-card rev d1"><div class="prod-photo"><img src="imagenes/horquillas-maxxis-danda.jpeg" alt="Horquillas y equipo especializado para bicicleta en D'ANDA Bikes" loading="lazy"></div><h3>Horquillas y refacciones</h3><p>Selección técnica para mantenimiento, reemplazo o mejora de componentes clave.</p><a class="prod-pill" href="https://wa.me/526673111524?text=Hola%2C%20quiero%20cotizar%20horquillas%20y%20refacciones%20en%20D%27ANDA%20Bikes" target="_blank" rel="noopener noreferrer">Cotizar ahora</a></div>
+      <div class="prod-card rev d2"><div class="prod-photo"><img src="imagenes/pedales-danda.jpeg" alt="Pedales para bicicleta disponibles en D'ANDA Bikes" loading="lazy"></div><h3>Pedales y accesorios</h3><p>Accesorios que mejoran postura, transferencia de potencia y experiencia de manejo.</p><a class="prod-pill" href="https://wa.me/526673111524?text=Hola%2C%20quiero%20cotizar%20pedales%20y%20accesorios%20en%20D%27ANDA%20Bikes" target="_blank" rel="noopener noreferrer">Cotizar ahora</a></div>
+    </div>
+    <p class="prod-note rev">La disponibilidad puede variar por producto. Escríbenos por WhatsApp o visita la tienda para recibir asesoría directa antes de comprar.</p>
+  </div>
+</section>
+
+<section id="why" class="section bg-navy">
+  <div class="why-bg" aria-hidden="true"></div>
+  <canvas id="pcanvasWhy" class="particle-canvas" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="why-img-wrap rev from-r">
+        <div class="why-img-main"><img src="imagenes/refacciones-danda.jpeg" alt="Refacciones y piezas para bicicleta disponibles en D'ANDA Bikes" loading="lazy"></div>
+        <div class="why-img-badge"><p class="wib-n">Pro</p><p class="wib-l">Asesoría directa</p></div>
+      </div>
+      <div class="why-content rev">
+        <p class="eyebrow eyebrow--white">Por qué elegirnos</p>
+        <h2 class="heading heading--white heading--shine-dark">La diferencia D'ANDA</h2>
+        <p class="sub sub--white">Comprar una refacción o dejar tu bici en taller debe sentirse claro, honesto y bien acompañado.</p>
+        <div class="benefit-list">
+          <div class="benefit"><div class="ben-icon ben-icon-g"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.1-3.1a6 6 0 0 1-7.9 7.9l-6 6a2.1 2.1 0 0 1-3-3l6-6a6 6 0 0 1 7.9-7.9l-3.1 3.1z"/></svg></div><div><h4>Criterio de taller</h4><p>Antes de recomendar una pieza, pensamos en compatibilidad, uso real y desempeño de tu bicicleta.</p></div></div>
+          <div class="benefit"><div class="ben-icon ben-icon-g"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg></div><div><h4>Productos especializados</h4><p>Trabajamos con marcas reconocidas en ciclismo, visibles en tienda: Fox, RockShox, Maxxis, Muc-Off, Shimano y SRAM.</p></div></div>
+          <div class="benefit"><div class="ben-icon ben-icon-g"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg></div><div><h4>Atención cercana</h4><p>Te explicamos opciones, diferencias y cuidados para que tomes una decisión con confianza.</p></div></div>
+          <div class="benefit"><div class="ben-icon ben-icon-g"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18"/><path d="M12 3v18"/><circle cx="12" cy="12" r="9"/></svg></div><div><h4>Experiencia integral</h4><p>Tienda y taller en un mismo lugar: compras, revisas, ajustas y sales con una bici mejor preparada.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="numbers">
+  <div class="numbers-bg" aria-hidden="true"></div>
+  <div class="numbers-ov" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="section-head section-head--center rev"><p class="eyebrow eyebrow--white">Cómo funciona</p><h2 class="heading heading--white heading--shine-dark">Agenda, revisa y vuelve a rodar</h2></div>
+    <div class="numbers-grid">
+      <div class="number-item rev d1"><p class="num-v">01</p><p class="num-l">Cuéntanos qué necesita tu bicicleta o qué producto buscas</p></div>
+      <div class="number-item rev d2"><p class="num-v">02</p><p class="num-l">Te orientamos con opciones compatibles y claras</p></div>
+      <div class="number-item rev d3"><p class="num-v">03</p><p class="num-l">Agenda servicio de taller o aparta tu producto</p></div>
+      <div class="number-item rev d4"><p class="num-v">04</p><p class="num-l">Recibe tu bici ajustada y lista para la siguiente ruta</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="galeria">
+  <canvas id="pcanvasGaleria" class="particle-canvas" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="brands-head rev"><p class="eyebrow eyebrow--white">Galería</p><h2 class="heading heading--white heading--shine-dark">Detalles reales de tienda</h2><p class="brands-sub">Productos, componentes y espacios de D'ANDA Bikes para que conozcas la experiencia antes de visitarnos.</p></div>
+    <div class="brands-grid">
+      <div class="brand-card rev d1"><div class="brand-card-inner"><img src="imagenes/productos-muc-off-danda.jpeg" alt="Exhibidor de productos Muc-Off para bicicleta en D'ANDA Bikes" loading="lazy"></div></div>
+      <div class="brand-card rev d2"><div class="brand-card-inner"><img src="imagenes/componentes-bicicleta-danda.jpeg" alt="Componentes para bicicleta exhibidos en D'ANDA Bikes" loading="lazy"></div></div>
+      <div class="brand-card rev d3"><div class="brand-card-inner"><img src="imagenes/casco-ciclismo-danda.jpeg" alt="Casco de ciclismo en mostrador de D'ANDA Bikes" loading="lazy"></div></div>
+      <div class="brand-card rev d4"><div class="brand-card-inner"><img src="imagenes/llanta-maxxis-danda.jpeg" alt="Llanta Maxxis para bicicleta de montaña en D'ANDA Bikes" loading="lazy"></div></div>
+      <div class="brand-card rev d1"><div class="brand-card-inner"><img src="imagenes/suspension-rockshox-danda.jpeg" alt="Suspensión RockShox revisada en D'ANDA Bikes" loading="lazy"></div></div>
+      <div class="brand-card rev d2"><div class="brand-card-inner"><img src="imagenes/horquillas-maxxis-danda.jpeg" alt="Horquillas y exhibidor Maxxis en D'ANDA Bikes" loading="lazy"></div></div>
+      <div class="brand-card rev d3"><div class="brand-card-inner"><img src="imagenes/pedales-danda.jpeg" alt="Pedales para bicicleta en D'ANDA Bikes" loading="lazy"></div></div>
+      <div class="brand-card rev d4"><div class="brand-card-inner"><img src="imagenes/fachada-danda-bikes.jpeg" alt="Fachada de tienda D'ANDA Bikes" loading="lazy"></div></div>
+    </div>
+    <p class="brands-note rev">Marcas visibles en tienda: Fox · RockShox · Maxxis · Muc-Off · Shimano · SRAM · Crankbrothers · Enduro</p>
+  </div>
+</section>
+
+<section id="contact" class="section bg-off">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-info rev from-l">
+        <div class="contact-info-bg" aria-hidden="true"></div>
+        <div class="contact-info-content">
+          <p class="eyebrow eyebrow--white">Contáctanos</p>
+          <h2 class="heading heading--white">Agenda tu servicio o cotiza productos</h2>
+          <p class="sub sub--white" style="margin-bottom:32px">Escríbenos para revisar disponibilidad, resolver dudas de compatibilidad o programar una visita al taller.</p>
+          <div class="c-item"><div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.27z"/></svg></div><div><p class="c-label">Teléfono / WhatsApp</p><p class="c-value"><a href="tel:+526673111524">66 73 11 15 24</a></p></div></div>
+          <div class="c-item"><div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><p class="c-label">Ubicación</p><p class="c-value">Blvd. Villas del Río, tienda D'ANDA Bikes</p></div></div>
+          <div class="c-item"><div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M16.5 7.5h.01"/></svg></div><div><p class="c-label">Instagram</p><p class="c-value"><a href="https://www.instagram.com/dandabikes__?igsh=MTEyZDRzZW5qeHNicA==" target="_blank" rel="noopener noreferrer">@dandabikes__</a></p></div></div>
+          <div class="c-item"><div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l10-2v13"/><circle cx="7" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></div><div><p class="c-label">TikTok</p><p class="c-value"><a href="https://www.tiktok.com/@dandabike?_r=1&_t=ZS-98uZUOvHJNk" target="_blank" rel="noopener noreferrer">@dandabike</a></p></div></div>
+          <div class="c-item"><div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div><div><p class="c-label">Facebook</p><p class="c-value"><a href="https://www.facebook.com/share/1DBWBgD1vk/" target="_blank" rel="noopener noreferrer">D'ANDA Bikes en Facebook</a></p></div></div>
+        </div>
+      </div>
+      <div class="rev">
+        <div class="form-wrap">
+          <h3>Solicitar atención</h3>
+          <p class="form-sub">Cuéntanos qué necesitas y abriremos WhatsApp con tu mensaje listo.</p>
+          <form id="cForm" novalidate>
+            <div class="frow"><div class="fg"><label class="fl" for="fn">Nombre completo *</label><input class="fi" type="text" id="fn" name="nombre" placeholder="Tu nombre completo" required autocomplete="name"></div><div class="fg"><label class="fl" for="ft">Teléfono *</label><input class="fi" type="tel" id="ft" name="telefono" placeholder="+52 667 000 0000" required autocomplete="tel"></div></div>
+            <div class="fg"><label class="fl" for="fs">¿Qué necesitas? *</label><select class="fi" id="fs" name="tipo" required><option value="">Selecciona una opción</option><option value="Servicio de taller">Servicio de taller</option><option value="Refacciones">Refacciones</option><option value="Llantas">Llantas</option><option value="Suspensión">Suspensión</option><option value="Accesorios">Accesorios</option><option value="Bicicletas">Bicicletas</option><option value="Asesoría">Asesoría</option></select></div>
+            <div class="fg"><label class="fl" for="fm">Mensaje</label><textarea class="fi" id="fm" name="mensaje" rows="3" placeholder="Cuéntanos modelo de bici, pieza que buscas o servicio que necesitas..."></textarea></div>
+            <button type="submit" class="btn-submit"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Enviar por WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="map-card rev">
+      <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=D%27ANDA%20Bikes%20Blvd.%20Villas%20del%20R%C3%ADo" target="_blank" rel="noopener noreferrer" aria-label="Abrir ubicación de D'ANDA Bikes en Google Maps">
+        <iframe class="map-frame" src="https://maps.google.com/maps?q=D%27ANDA%20Bikes%20Blvd.%20Villas%20del%20R%C3%ADo&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de D'ANDA Bikes en Google Maps" aria-hidden="true" tabindex="-1"></iframe>
+        <span class="map-tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Ver ruta a D'ANDA Bikes</span>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="foot-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="foot-logo"><img src="imagenes/logo-danda.png" alt="D'ANDA Bikes" class="foot-logo-img"><div class="logo-word">D'ANDA <em>BIKES</em></div></div><p class="foot-desc">Tienda y taller especializado en bicicletas, refacciones, accesorios, mantenimiento y asesoría para ciclistas que buscan equipo confiable y servicio experto.</p><div class="foot-social"><a href="https://www.instagram.com/dandabikes__?igsh=MTEyZDRzZW5qeHNicA==" target="_blank" rel="noopener noreferrer" aria-label="D'ANDA Bikes en Instagram" class="foot-social-btn">IG</a><a href="https://www.tiktok.com/@dandabike?_r=1&_t=ZS-98uZUOvHJNk" target="_blank" rel="noopener noreferrer" aria-label="D'ANDA Bikes en TikTok" class="foot-social-btn">TT</a><a href="https://www.facebook.com/share/1DBWBgD1vk/" target="_blank" rel="noopener noreferrer" aria-label="D'ANDA Bikes en Facebook" class="foot-social-btn">FB</a></div></div>
+      <div><p class="foot-col-title">Servicios</p><ul class="foot-links"><li><a href="#services">Mantenimiento</a></li><li><a href="#services">Suspensión</a></li><li><a href="#services">Asesoría</a></li><li><a href="#services">Venta de bicicletas</a></li></ul></div>
+      <div><p class="foot-col-title">Tienda</p><ul class="foot-links"><li><a href="#inventario">Llantas Maxxis</a></li><li><a href="#inventario">Productos Muc-Off</a></li><li><a href="#inventario">Componentes</a></li><li><a href="#inventario">Accesorios</a></li></ul></div>
+      <div><p class="foot-col-title">Contacto</p><ul class="foot-links"><li><a href="tel:+526673111524">66 73 11 15 24</a></li><li><a href="https://wa.me/526673111524" target="_blank" rel="noopener noreferrer">WhatsApp directo</a></li><li><a href="https://www.instagram.com/dandabikes__?igsh=MTEyZDRzZW5qeHNicA==" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="#contact">Agenda Servicio</a></li></ul></div>
+    </div>
+    <div class="foot-bottom"><p>© 2026 <span>D'ANDA Bikes</span>. Todos los derechos reservados.</p><p>Tienda y taller de bicicletas</p></div>
+  </div>
+</footer>
+
+<div class="fab-stack">
+  <div class="fab-item"><span class="fab-tip">Síguenos en Instagram</span><a href="https://www.instagram.com/dandabikes__?igsh=MTEyZDRzZW5qeHNicA==" target="_blank" rel="noopener noreferrer" class="fab-btn ig-btn" aria-label="Visitar D'ANDA Bikes en Instagram">IG</a></div>
+  <div class="fab-item"><span class="fab-tip">Ver TikTok</span><a href="https://www.tiktok.com/@dandabike?_r=1&_t=ZS-98uZUOvHJNk" target="_blank" rel="noopener noreferrer" class="fab-btn tk-btn" aria-label="Visitar D'ANDA Bikes en TikTok">TT</a></div>
+  <div class="fab-item"><span class="fab-tip">Escríbenos por WhatsApp</span><a href="https://wa.me/526673111524" target="_blank" rel="noopener noreferrer" class="fab-btn wa-btn" aria-label="Contactar a D'ANDA Bikes por WhatsApp"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
